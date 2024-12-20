@@ -138,6 +138,40 @@ body {
   color: #007bff;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.main-menu nav ul li .dropdown li .subdropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.main-menu nav ul li .dropdown li:hover .subdropdown {
+  display: block;
+}
+
+.main-menu nav ul li .dropdown li .subdropdown li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.main-menu nav ul li .dropdown li .subdropdown li a {
+  color: #333;
+}
+
+.main-menu nav ul li .dropdown li .subdropdown li a:hover {
+  color: #007bff;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<< */
+
 .get-quote .btn {
   background-color: #007bff;
   color: #fff;
@@ -151,7 +185,6 @@ body {
   background-color: #0056b3;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -279,6 +312,16 @@ body {
         display: flex;
     }
 
+    /* .mobile-menu ul li .dropdown li .subdropdown {
+        display: none;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .mobile-menu ul li.open .dropdown li .subdropdown {
+        display: flex;
+    } */
+
     .main-menu {
         display: none;
     }
@@ -293,7 +336,7 @@ body {
         position: relative;
     }
 
-    .mobile-menu ul li .dropdown {
+    .mobile-menu ul li .dropdown li .subdropdown {
         display: none;
         flex-direction: column;
         background-color: #f8f9fa;
@@ -301,7 +344,7 @@ body {
         padding-left: 15px;
     }
 
-    .mobile-menu ul li.open .dropdown {
+    .mobile-menu ul li.open .dropdown li .subdropdown {
         display: flex;
     }
 
@@ -320,7 +363,7 @@ body {
         color: #007BFF;
     }
 
-    .mobile-menu ul li .dropdown li a {
+    .mobile-menu ul li .dropdown li .subdropdown li a {
         font-size: 14px;
         padding: 5px 0;
     }
@@ -328,7 +371,13 @@ body {
     .mobile-menu ul li a.toggle {
         cursor: pointer;
     }
-}
+
+    .mobile-menu ul li .dropdown li a.subdropdown {
+        cursor: pointer;
+    }
+} 
+
+
 
 /* HEADER------------------- */
 
@@ -339,6 +388,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: 10;
 }
 
 .slider-wrapper {

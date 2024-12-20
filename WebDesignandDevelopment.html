@@ -72,21 +72,28 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li>
-                <a href="services.html" class="toggle"
-                  >Services <i class="fa-solid fa-chevron-down"></i
-                ></a>
+                <a href="#" class="toggle">Services <i class="fa-solid fa-chevron-down"></i></a>
                 <ul class="dropdown">
                   <li>
-                    <a href="digital-marketing.html">Digital Marketing</a>
-                  </li>
-                  <li><a href="web-services.html">Web Services</a></li>
-                  <li><a href="App-development.html">App Development</a></li>
-                  <li><a href="seo_ptimization.html">SEO Optimization</a></li>
+                    <a href="#"id="toggle-submenus">Digital Marketing <i class="fa-solid fa-chevron-down" style="margin-right: 20px;"></i></a>
+                    <ul class="subdropdown" id="subdropdown" style="display: none;">
+                      <li><a href="seo_ptimization.html">SEO Optimization</a></li>
                   <li>
-                    <a href="SocialMediaMarketing.html"
-                      >Social Media Marketing</a
-                    >
+                    <a href="SocialMediaMarketing.html">Social Media Marketing</a>
                   </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" id="toggle-submenus">Web Services <i class="fa-solid fa-chevron-down" style="margin-right: 20px;"></i></a>
+                    <ul class="subdropdown" id="subdropdown" style="display: none;">
+                      <li><a href="web-design.html">web design</a></li>
+                      <li>
+                        <a href="web-development.html">web development</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="App-development.html">App Development</a></li>
+                  
                   <li><a href="Content-writing.html">Content Writing</a></li>
                   <li>
                     <a href="graphic-designing.html">Graphic Designing</a>
@@ -95,7 +102,13 @@
                 </ul>
               </li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="Events.html">Events</a></li>
+              <li>
+                <a href="#" class="toggle">Insights <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                  <li><a href="Events.html">Events</a></li>
+                  <li><a href="Blogs.html">Blogs</a></li>
+                </ul>
+              </li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -111,16 +124,42 @@
                   ></a>
                   <ul class="dropdown" style="z-index: 999">
                     <li>
-                      <a href="digital-marketing.html">Digital Marketing</a>
+                      <a href="digital-marketing.html">Digital Marketing <i
+                        style="margin-left: 20px"
+                        class="fa-solid fa-angle-right"
+                      ></i
+                    ></a>
+                      <ul class="subdropdown">
+                        <li><a href="seo_ptimization.html">SEO Optimization</a></li>
+                        <li>
+                          <a href="SocialMediaMarketing.html"
+                            >Social Media Marketing</a
+                          >
+                        </li>
+                      </ul>
                     </li>
-                    <li><a href="web-services.html">Web Services</a></li>
-                    <li><a href="App-development.html">App Development</a></li>
-                    <li><a href="seo_ptimization.html">SEO Optimization</a></li>
                     <li>
+                      <a href="web-services.html"
+                        >Web Services
+                        <i
+                          style="margin-left: 20px"
+                          class="fa-solid fa-angle-right"
+                        ></i
+                      ></a>
+                      <ul class="subdropdown">
+                        <li><a href="web-design.html">Web design</a></li>
+                        <li>
+                          <a href="web-development.html">Web development</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="App-development.html">App Development</a></li>
+                    <!-- <li><a href="seo_ptimization.html">SEO Optimization</a></li> -->
+                    <!-- <li>
                       <a href="SocialMediaMarketing.html"
                         >Social Media Marketing</a
                       >
-                    </li>
+                    </li> -->
                     <li><a href="Content-writing.html">Content Writing</a></li>
                     <li>
                       <a href="graphic-designing.html">Graphic Designing</a>
@@ -129,7 +168,15 @@
                   </ul>
                 </li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="Events.html">Events</a></li>
+                <li>
+                  <a href="#"
+                    >Insights <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="dropdown" style="z-index: 999">
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="Blogs.html">Blogs</a></li>
+                  </ul>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
             </nav>
